@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #dfe9f3, #ffffff);
+  transition: 0.3s;
+}
+
+.app.dark {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: white;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+button {
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: #3b82f6;
+  color: white;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(15px);
+  padding: 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.dark .card {
+  background: rgba(30, 41, 59, 0.7);
+}
+
+.hourly {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.hour-box {
+  min-width: 80px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.dark .hour-box {
+  background: rgba(51, 65, 85, 0.7);
+}
+
+.day-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 24px;
+}
+
+.hour-box {
+  min-width: 90px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.day-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
